@@ -22,10 +22,12 @@ const Genres = ({ genres, selectedGenres, setGenres, setSelectedGenres, type,pag
         setPage(1)
     }
     useEffect(() => {
+        
         fetchGenres();
         return () => {
             setGenres({});
-       } 
+        }
+         // eslint-disable-next-line
     },[])
     return (
         <div style={{ paddinng: "6px 0" }}>
