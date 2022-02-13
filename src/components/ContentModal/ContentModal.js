@@ -32,9 +32,11 @@ export default function ContentModal({children,mediaType,id}) {
     const [open, setOpen] = React.useState(false);
     const [content, setContent] = React.useState([]);
     const [video, setvideo] = React.useState()
-    useEffect(() => {
-        fetchDetails();
-        fetchVideo()
+  useEffect(() => {
+      fetchDetails();
+       // eslint-disable-next-line
+    fetchVideo()
+     // eslint-disable-next-line
     },[])
   const fetchDetails = async () => {
     console.log(id);
